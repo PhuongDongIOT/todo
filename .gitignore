@@ -23,6 +23,10 @@ bin-release/
 BACKEND/node/expressjs/node_modules
 BACKEND/node/expressjs/package-lock.json
 
-
 BACKEND/node/hapi/node_modules
 BACKEND/node/hapi/package-lock.json
+
+BACKEND/node/molecule/node_modules
+BACKEND/node/molecule/package-lock.json
+
+BACKEND/node/todo-metor
