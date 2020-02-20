@@ -5,6 +5,7 @@ var cookieParser = require('cookie-parser');
 const partialResponse = require('express-partial-response');
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
+var cors = require('cors');
 var port = process.env.PORT || 3000;
 
 app.set('trust proxy', 1);
@@ -15,6 +16,7 @@ app.use(cookieSession({
     name: 'section',
     keys: ['key1', 'key2'],
 }));
+app.use(cors());
 app.use(cookieParser());
 app.use('/static', express.static('assets'));
 
