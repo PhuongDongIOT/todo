@@ -49,7 +49,7 @@ const start = async () => {
         handler: (request, h) => {
 
             return 'Hello World!';
-        }s
+        }
     });
 
     server.route({
