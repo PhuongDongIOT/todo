@@ -22,3 +22,7 @@ bin-release/
 #node
 BACKEND/node/expressjs/node_modules
 BACKEND/node/expressjs/package-lock.json
+
+
+BACKEND/node/hapi/node_modules
+BACKEND/node/hapi/package-lock.json
