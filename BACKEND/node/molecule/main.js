@@ -5,7 +5,7 @@ let broker = new ServiceBroker({ logger: console });
 
 // Create a service
 broker.createService({
-    name: "test",
+    name: "json",
     actions: {
         hello() {
             var user = {
@@ -13,6 +13,15 @@ broker.createService({
                 age: "24"
             }
             return user;
+        }
+    }
+});
+
+broker.createService({
+    name: "home",
+    actions: {
+        hello() {
+            return "Hello word!!";
         }
     }
 });
